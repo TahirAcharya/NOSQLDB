@@ -1,14 +1,14 @@
 # 🗄️ NoSQL Databases — BCD515C
 
-> **5th Semester | Professional Elective | 2026–2027 ODD | 3:0:0 | 40 Hours | 3 Credits**
+> **5th Semester | Professional Elective | 2026–2027 ODD | L:T:P - 3:0:0 | 40 Hours | 3 Credits**
 
-A structured, student-friendly GitHub course repository for **NoSQL Databases (BCD515C)**.  
+A structured, course repository for **NoSQL Databases (BCD515C)**.  
 This repository is designed to keep the syllabus, module notes, presentations, examples, tools, practice material and project resources in one place.
 
-# ZERO SESSION
+## ZERO SESSION
 [PPT Link](https://docs.google.com/presentation/d/1Gw6JMsPUvkZvm7psJs84A1y6KqxrPY-5/edit?usp=sharing&ouid=102189640680844426038&rtpof=true&sd=true)
 
-SYLLABUS
+## SYLLABUS
 [Syllabus Link](https://drive.google.com/file/d/1AY7Gqu1uvb7T7ISgokrS9LxiDGrjPEuU/view?usp=sharing)
 ---
 
