@@ -10,264 +10,318 @@ This repository is designed to keep the syllabus, module notes, presentations, e
 
 ## SYLLABUS
 [Syllabus Link](https://drive.google.com/file/d/1AY7Gqu1uvb7T7ISgokrS9LxiDGrjPEuU/view?usp=sharing)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Academic%20Year-2026--2027%20ODD-1f6feb?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Semester-V-8250df?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Course-BCD515C-0a7f5a?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hours-40-f59e0b?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Credits-03-e11d48?style=for-the-badge">
+</p>
+
+<p align="center">
+  <b>Professional Elective Course · Department of AI&ML · Acharya Institute of Technology</b><br>
+  <i>Learn the model → understand the architecture → use the tool → solve the problem → justify the trade-off.</i>
+</p>
+
 ---
 
-## 🎯 Course at a Glance
+## 📌 Course Snapshot
 
 | Item | Details |
 |---|---|
-| Course | **NoSQL Databases** |
-| Course Code | **BCD515C** |
-| Course Type | Professional Elective Course |
-| Semester | **V** |
-| Academic Year | **2026–2027 (ODD)** |
-| L-T-P | **3:0:0** |
-| Total Pedagogy | **40 Hours** |
-| Credits | **03** |
-| Examination | Theory |
-| CIE / SEE | **50 / 50** |
+| **Course Title** | NoSQL Databases |
+| **Course Code** | BCD515C |
+| **Course Type** | Professional Elective Course |
+| **Semester** | V |
+| **Academic Year** | 2026–2027 (ODD) |
+| **Teaching Hours / Week** | L:T:P:S = **3:0:0:0** |
+| **Total Pedagogy** | **40 Hours** |
+| **Credits** | **03** |
+| **CIE / SEE** | **50 / 50** |
+| **SEE Duration** | **03 Hours** |
+| **Examination** | Theory |
 
-### Course Objectives
-
-By the end of the course, learners should be able to:
-
-- Understand the importance and need for NoSQL databases.
-- Understand MapReduce and Key–Value databases.
-- Understand the fundamentals of Document databases.
-- Identify situations where Graph databases are advantageous.
-- Connect NoSQL concepts with scalable, distributed and real-world applications.
+> **Official syllabus basis:** 5 modules × 8 hours = 40 hours. The course objectives focus on the need for NoSQL, MapReduce/Key–Value databases, Document databases and Graph database use cases.
 
 ---
 
 # 🧭 Course Roadmap
 
 ```text
-WHY NoSQL
-   ↓
-DATA MODELS
-   ↓
-DISTRIBUTION + CONSISTENCY
-   ↓
-MAPREDUCE + KEY–VALUE
-   ↓
-DOCUMENT DATABASES
-   ↓
-GRAPH DATABASES
-   ↓
-REAL-WORLD NoSQL SYSTEM DESIGN
+             WHY NoSQL?
+                  │
+                  ▼
+       AGGREGATE DATA MODELS
+                  │
+                  ▼
+     DISTRIBUTION + CONSISTENCY
+                  │
+                  ▼
+         CAP + VERSION STAMPS
+                  │
+                  ▼
+       MAPREDUCE + KEY–VALUE
+                  │
+          ┌───────┴────────┐
+          ▼                ▼
+     DOCUMENT           GRAPH
+     DATABASES         DATABASES
+          │                │
+          └───────┬────────┘
+                  ▼
+       REAL-WORLD NoSQL DESIGN
 ```
+
+---
+
+# 🎯 Course Objectives
+
+The syllabus expects students to:
+
+- Understand the importance and need of NoSQL.
+- Gain exposure to MapReduce and Key–Value databases.
+- Understand fundamentals of Document Databases.
+- Identify use cases where Graph databases are advantageous.
 
 ---
 
 # 📚 Module-wise Syllabus
 
-## Module 1 — Why NoSQL & Aggregate Data Models
-**8 Hours**
+## 01 · Why NoSQL & Aggregate Data Models
+**8 Hours · Textbook 1: Chapters 1, 2, 3**
 
-### Topics
-- Why NoSQL?
-- Value of relational databases
-- Persistent data
-- Concurrency and integration
-- Standard relational model
-- Impedance mismatch
-- Application and integration databases
-- Attack of the clusters
-- Emergence of NoSQL
-- Aggregate data models
+### Why NoSQL
+- The Value of Relational Databases
+- Getting at Persistent Data
+- Concurrency
+- Integration
+- A (Mostly) Standard Model
+- Impedance Mismatch
+- Application and Integration Databases
+- Attack of the Clusters
+- The Emergence of NoSQL
+
+### Aggregate Data Models
 - Aggregates
-- Relations vs aggregates
-- Consequences of aggregate orientation
-- Aggregate-oriented databases
+- Examples of Relations and Aggregates
+- Consequences of Aggregate Orientation
+- Summarizing Aggregate-Oriented Databases
+
+### More Details on Data Models
 - Relationships
-- Graph databases
-- Schemaless databases
-- Materialized views
+- Graph Databases
+- Schema-less Databases
+- Materialized Views
 
-### Suggested tools
-`MongoDB` · `Neo4j` · `JSON`
-
-### Learning outcome
-Students can explain **why NoSQL emerged**, distinguish relational and aggregate-oriented thinking, and identify suitable NoSQL data models.
+**Suggested exploration:** MongoDB, JSON/document modelling, Neo4j.
 
 ---
 
-## Module 2 — Distribution, Consistency & CAP
-**8 Hours**
+## 02 · Distribution Models, Consistency & CAP
+**8 Hours · Textbook 1: Chapters 4, 5, 6**
 
-### Topics
-- Single-server model
+### Distribution Models
+- Single Server
 - Sharding
-- Master–slave replication
-- Peer-to-peer replication
-- Combining sharding and replication
-- Update consistency
-- Read consistency
-- Relaxing consistency
+- Master–Slave Replication
+- Peer-to-Peer Replication
+- Combining Sharding and Replication
+
+### Consistency
+- Update Consistency
+- Read Consistency
+- Relaxing Consistency
 - CAP Theorem
-- Version stamps
-- Business and system transactions
-- Version stamps on multiple nodes
 
-### Suggested tools
-`MongoDB` · `Cassandra` · `DynamoDB`
+### Version Stamps
+- Business Transactions
+- System Transactions
+- Version Stamps on Multiple Nodes
 
-### Learning outcome
-Students can reason about **scaling, replication, partitioning and consistency trade-offs** in distributed NoSQL systems.
+**Suggested exploration:** MongoDB Atlas, Cassandra, DynamoDB.
 
 ---
 
-## Module 3 — MapReduce & Key–Value Databases
-**8 Hours**
+## 03 · MapReduce & Key–Value Databases
+**8 Hours · Textbook 1: Chapters 7, 8**
 
-### Topics
+### MapReduce
 - Basic MapReduce
-- Partitioning and combining
-- Composing MapReduce calculations
-- Two-stage MapReduce
+- Partitioning and Combining
+- Composing MapReduce Calculations
+- Two-Stage MapReduce Example
 - Incremental MapReduce
-- Key–Value stores
+
+### Key–Value Databases
+- What is a Key–Value Store?
 - Consistency
 - Transactions
-- Query features
-- Data structure
+- Query Features
+- Structure of Data
 - Scaling
-- Use cases:
-  - Session information
-  - User profiles
-  - Preferences
-  - Shopping carts
-- When not to use Key–Value databases:
-  - Relationships among data
-  - Multi-operation transactions
-  - Query-by-data
-  - Set-based operations
 
-### Suggested tools
-`Redis` · `DynamoDB`
+### Suitable Use Cases
+- Session information
+- User profiles
+- Preferences
+- Shopping cart data
 
-### Learning outcome
-Students can select Key–Value storage for appropriate workloads and explain the basic MapReduce processing model.
+### When Not to Use
+- Relationships among data
+- Multi-operation transactions
+- Query by data
+- Operations by sets
+
+**Suggested exploration:** Redis, Hadoop MapReduce, DynamoDB.
 
 ---
 
-## Module 4 — Document Databases
-**8 Hours**
+## 04 · Document Databases
+**8 Hours · Textbook 1: Chapter 9**
 
-### Topics
 - What is a Document Database?
 - Consistency
 - Transactions
 - Availability
-- Query features
+- Query Features
 - Scaling
-- Suitable use cases:
-  - Event logging
-  - Content Management Systems
-  - Blogging platforms
-  - Web / real-time analytics
-  - E-commerce applications
-- When not to use:
-  - Complex transactions spanning different operations
-  - Queries against varying aggregate structures
 
-### Suggested tools
-`MongoDB` · `MongoDB Atlas`
+### Suitable Use Cases
+- Event Logging
+- Content Management Systems
+- Blogging Platforms
+- Web Analytics / Real-Time Analytics
+- E-Commerce Applications
 
-### Learning outcome
-Students can model application data as documents and identify appropriate document-database use cases.
+### When Not to Use
+- Complex transactions spanning different operations
+- Queries against varying aggregate structure
+
+**Suggested exploration:** MongoDB / MongoDB Atlas / MongoDB Compass.
 
 ---
 
-## Module 5 — Graph Databases
-**8 Hours**
+## 05 · Graph Databases
+**8 Hours · Textbook 1: Chapter 11**
 
-### Topics
 - What is a Graph Database?
-- Nodes and relationships
-- Graph database features
+- Features
 - Consistency
 - Transactions
 - Availability
-- Query features
+- Query Features
 - Scaling
-- Suitable use cases:
-  - Connected data
-  - Routing
-  - Dispatch
-  - Location-based services
-  - Recommendation engines
-- When not to use graph databases
 
-### Suggested tools
-`Neo4j` · `Cypher`
+### Suitable Use Cases
+- Connected Data
+- Routing
+- Dispatch
+- Location-Based Services
+- Recommendation Engines
 
-### Learning outcome
-Students can identify relationship-heavy problems and model them using graph databases.
+### Also Understand
+- When graph databases should **not** be used.
+
+**Suggested exploration:** Neo4j, Cypher, Neo4j Aura.
 
 ---
 
-# 🧰 NoSQL Tools Lab / Demo Map
+# 🧠 Course Outcomes
 
-| Category | Tools | Best-fit learning |
+By the end of the course, students should be able to:
+
+| CO | Expected capability | RBT |
 |---|---|---|
-| Document | MongoDB | Documents, CRUD, aggregation, indexing |
-| Key–Value | Redis | Key–value operations, caching, sessions |
-| Wide-column | Apache Cassandra | Distribution, replication, scalable writes |
-| Key–Value + Document | Amazon DynamoDB | Partitioning, managed NoSQL, cloud scale |
-| Graph | Neo4j | Nodes, relationships, Cypher, connected data |
-| Processing | Hadoop MapReduce | Distributed batch processing concepts |
+| **CO1** | Explain concepts, architecture and data models of NoSQL databases. | L2 |
+| **CO2** | Discuss distribution models, consistency mechanisms and CAP theorem. | L2 |
+| **CO3** | Implement MapReduce programming and Key–Value databases for scalable processing/storage. | L3 |
+| **CO4** | Demonstrate document database concepts and query mechanisms for suitable scenarios. | L3 |
+| **CO5** | Apply graph database concepts and query techniques for connected-data applications. | L3 |
 
 ---
 
-# 📝 Notes Repository
+# 🧰 NoSQL Tool Directory
 
-Keep notes separated by module so updates remain simple.
+The `tools/` folder is intentionally designed to be updated throughout the semester.
+
+| Tool | Model / Focus | Official Resources |
+|---|---|---|
+| **MongoDB** | Document | [Docs](https://www.mongodb.com/docs/manual/) · [University](https://learn.mongodb.com/) |
+| **Redis** | Key–Value / Data Structures | [Docs](https://redis.io/docs/latest/) · [Quick Starts](https://redis.io/docs/latest/develop/get-started/) |
+| **Apache Cassandra** | Distributed / Wide-Column | [Docs](https://cassandra.apache.org/doc/stable/) · [Quickstart](https://cassandra.apache.org/doc/stable/cassandra/getting-started/cassandra-quickstart.html) |
+| **Amazon DynamoDB** | Key–Value + Document | [Docs](https://docs.aws.amazon.com/dynamodb/) · [Getting Started](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) |
+| **Neo4j** | Graph | [Docs](https://neo4j.com/docs/) · [Cypher](https://neo4j.com/docs/cypher-manual/current/) |
+| **Hadoop MapReduce** | Distributed Processing | [Docs](https://hadoop.apache.org/docs/current/) · [MapReduce Tutorial](https://hadoop.apache.org/docs/stable1/mapred_tutorial.html) |
+
+### ➕ Add a new tool
+
+Update `tools/TOOLS.md` using:
+
+```markdown
+## Tool Name
+- **Type:** Document / Key–Value / Wide-Column / Graph / Other
+- **Official Website:** 
+- **Documentation:** 
+- **Learning Resource:** 
+- **Best Module:** 
+- **Student Activity:** 
+- **Notes:** 
+```
+
+---
+
+# 📝 Notes Management System
+
+Each module has a dedicated folder:
 
 ```text
 notes/
-├── module-01-why-nosql/
-│   ├── lecture-notes.md
-│   ├── quick-revision.md
-│   └── important-questions.md
-├── module-02-distribution-consistency/
-│   ├── lecture-notes.md
-│   ├── cap-theorem.md
-│   └── quick-revision.md
-├── module-03-mapreduce-keyvalue/
-│   ├── lecture-notes.md
-│   ├── mapreduce.md
-│   └── key-value.md
-├── module-04-document-databases/
-│   ├── lecture-notes.md
-│   ├── mongodb.md
-│   └── quick-revision.md
-└── module-05-graph-databases/
-    ├── lecture-notes.md
-    ├── neo4j-cypher.md
-    └── quick-revision.md
+├── module-01/
+├── module-02/
+├── module-03/
+├── module-04/
+└── module-05/
 ```
 
-### ✏️ How to update notes
+Recommended files:
 
-1. Open the relevant module folder.
-2. Edit `lecture-notes.md`.
-3. Add diagrams, examples and references.
-4. Keep each concept short and exam-oriented.
-5. Commit using a clear message:
+```text
+module-01/
+├── lecture-notes.md
+├── one-shot-revision.md
+├── diagrams.md
+└── important-questions.md
+```
+
+### 🔄 Update workflow
 
 ```bash
+git pull
+# edit notes
 git add .
-git commit -m "Update Module 4 MongoDB notes"
+git commit -m "Update Module 2 CAP theorem notes"
 git push
 ```
 
+### Naming convention
+
+Use:
+
+`M01_01_Why_NoSQL.md`
+
+`M01_02_Aggregate_Models.md`
+
+`M04_01_Document_Databases.md`
+
+This keeps the repository easy to maintain and easy for students to navigate.
+
 ---
 
-# 🎞️ PPT / Presentation Repository
+# 🎞️ Presentation Management
 
 ```text
-presentations/
+slides/
 ├── 00-zero-session/
 ├── 01-module-01/
 ├── 02-module-02/
@@ -288,162 +342,198 @@ M05_Graph_Databases.pptx
 
 ---
 
-# 🌐 Official Learning Resources
+# 🌐 E-Resources & Self-Learning
 
-### MongoDB
-- Documentation: https://www.mongodb.com/docs/
-- Manual: https://www.mongodb.com/docs/manual/
-- MongoDB University: https://learn.mongodb.com/
+## 🟢 MongoDB — Module 1 & 4
 
-### Redis
-- Documentation: https://redis.io/docs/latest/
-- Redis University: https://university.redis.com/
+- [MongoDB Documentation](https://www.mongodb.com/docs/manual/)
+- [MongoDB Tutorials](https://www.mongodb.com/docs/manual/tutorial/)
+- [MongoDB University](https://learn.mongodb.com/)
+- [MongoDB 5-Minute Interactive Tutorial](https://www.mongodb.com/docs/manual/tutorial/getting-started/)
 
-### Apache Cassandra
-- Documentation: https://cassandra.apache.org/doc/latest/
-- Getting Started: https://cassandra.apache.org/doc/latest/cassandra/getting-started/
-
-### Amazon DynamoDB
-- Documentation: https://docs.aws.amazon.com/dynamodb/
-- Getting Started: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html
-
-### Neo4j
-- GraphAcademy: https://graphacademy.neo4j.com/
-- Documentation: https://neo4j.com/docs/
-- Cypher Manual: https://neo4j.com/docs/cypher-manual/current/
-
-### Hadoop / MapReduce
-- Apache Hadoop: https://hadoop.apache.org/
-- MapReduce Tutorial: https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+**Recommended path:** Introduction → Documents → CRUD → Aggregation → Data Modelling → Indexes → Replication → Sharding.
 
 ---
 
-# 🎓 Recommended E-Resource Path
+## 🔴 Redis — Module 3
 
-## Beginner
-1. Understand SQL vs NoSQL.
-2. Learn the four major NoSQL families.
-3. Study CAP and distributed systems.
-4. Try MongoDB CRUD.
-5. Try Redis key–value operations.
-6. Build a simple Neo4j graph.
+- [Redis Documentation](https://redis.io/docs/latest/)
+- [Redis Quick Starts](https://redis.io/docs/latest/develop/get-started/)
+- [Redis Data-Store Quick Start](https://redis.io/docs/latest/develop/get-started/data-store/)
+- [Redis Tools](https://redis.io/docs/latest/operate/)
 
-## Intermediate
-- Data modeling
-- Indexing
-- Aggregation
-- Replication
-- Sharding
-- Consistency
-- Query design
-- Performance trade-offs
-
-## Advanced / Project
-- Polyglot persistence
-- NoSQL architecture
-- Distributed system design
-- Recommendation systems
-- Real-time analytics
-- Event-driven applications
-- Graph-based recommendations
-- Cloud NoSQL
+**Recommended path:** Keys → Strings → Hashes → Lists → Sets → Sorted Sets → Persistence → Transactions → Pub/Sub.
 
 ---
 
-# 🧪 Suggested Student Activities
+## 🟣 Apache Cassandra — Module 2
 
-- **Activity 1:** SQL table → MongoDB document conversion
-- **Activity 2:** Demonstrate CAP trade-offs
-- **Activity 3:** Design a Redis-based session store
-- **Activity 4:** Build a MongoDB e-commerce database
-- **Activity 5:** Model a social network in Neo4j
-- **Activity 6:** Compare MongoDB, Redis, Cassandra and Neo4j for one application
-- **Activity 7:** Mini project using any NoSQL platform
+- [Cassandra Documentation](https://cassandra.apache.org/doc/stable/)
+- [Cassandra Getting Started](https://cassandra.apache.org/doc/stable/cassandra/getting-started/)
+- [Cassandra Quickstart](https://cassandra.apache.org/doc/stable/cassandra/getting-started/cassandra-quickstart.html)
 
-### Mini-project idea
-
-> **Design a scalable NoSQL solution for a real-world application.**
-
-Possible domains:
-- E-commerce
-- Social networking
-- Recommendation engine
-- Food delivery
-- Smart campus
-- IoT analytics
-- Travel / routing
-- Learning management system
+**Recommended path:** Architecture → Replication → Partitioning → Data Modelling → CQL → Distributed operations.
 
 ---
 
-# 🧠 Quick Revision Matrix
+## 🟠 Amazon DynamoDB — Modules 2 & 3
 
-| Concept | Remember |
-|---|---|
-| NoSQL | Not only SQL / non-relational approaches |
-| Aggregate | Data grouped around an application access pattern |
-| Sharding | Horizontal partitioning |
-| Replication | Multiple copies of data |
-| CAP | Consistency, Availability, Partition tolerance |
-| Key–Value | Key → value |
-| Document | JSON/BSON-like document |
-| Graph | Nodes + relationships |
-| MapReduce | Map → intermediate processing → Reduce |
-| Polyglot persistence | Use different databases for different needs |
+- [DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)
+- [Getting Started](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html)
+- [Learning Resources & Tools](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AdditionalResources.html)
+
+**Recommended path:** Tables → Items → Keys → Query/Scan → Indexes → Partitions → Consistency → Data modelling.
 
 ---
 
-# 📖 Core Textbook
+## 🔵 Neo4j — Module 5
 
+- [Neo4j Documentation](https://neo4j.com/docs/)
+- [Cypher Manual](https://neo4j.com/docs/cypher-manual/current/)
+- [GraphAcademy](https://graphacademy.neo4j.com/)
+- [Neo4j Fundamentals](https://graphacademy.neo4j.com/courses/neo4j-fundamentals/)
+- [Cypher Fundamentals](https://graphacademy.neo4j.com/courses/cypher-fundamentals/)
+
+**Recommended path:** Graph thinking → Nodes → Relationships → Properties → MATCH → CREATE → WHERE → Aggregation → Pattern traversal.
+
+---
+
+## 🟡 Hadoop MapReduce — Module 3
+
+- [Apache Hadoop Documentation](https://hadoop.apache.org/docs/current/)
+- [MapReduce Tutorial](https://hadoop.apache.org/docs/stable1/mapred_tutorial.html)
+
+**Recommended path:** Mapper → Shuffle/Sort → Reducer → Combiner → Partitioner → WordCount → Multi-stage processing.
+
+---
+
+# 📖 Prescribed & Reference Books
+
+### Prescribed Textbook
 **Pramod J. Sadalage & Martin Fowler**  
-*NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence*  
-Pearson / Addison-Wesley.
+*NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence*, Pearson Addison Wesley, 2012.
 
 ### Reference Books
-- Dan Sullivan — *NoSQL for Mere Mortals*
-- Dan McCreary & Ann Kelly — *Making Sense of NoSQL*
-- Kristina Chodorow — *MongoDB: The Definitive Guide*
+1. Dan Sullivan — *NoSQL For Mere Mortals*, 1st Edition, Pearson Education India, 2015.
+2. Dan McCreary & Ann Kelly — *Making Sense of NoSQL: A Guide for Managers and the Rest of Us*, 1st Edition, Manning/Dreamtech Press, 2013.
+3. Kristina Chodorow — *MongoDB: The Definitive Guide – Powerful and Scalable Data Storage*, 2nd Edition, O'Reilly Publications, 2013.
 
 ---
 
-# 📌 Repository Contribution / Update Convention
+# 🧪 Student-Centric Learning
 
-Use this pattern for future additions:
+The course presentation proposes:
+
+| Module | Participative | Experiential | Problem Solving | ICT / Tool |
+|---|---|---|---|---|
+| M1 | SQL vs NoSQL discussion | MongoDB Atlas exploration | Database selection | Atlas / simulators |
+| M2 | CAP discussion | Replication & sharding | Distributed DB cases | MongoDB Atlas |
+| M3 | MapReduce team discussion | MapReduce + Redis | Large-scale processing | Redis / MapReduce |
+| M4 | Document schema discussion | CRUD, indexing, aggregation | Optimize document models | MongoDB Compass/Atlas |
+| M5 | Graph application presentation | Neo4j graph modelling | Recommendation/network cases | Neo4j Desktop/Aura |
+
+### 🚀 Augmented Course Project
+
+**E-Commerce Platform — Polyglot Persistence Design**
+
+Students can use generative AI to scaffold schemas/queries for different stores and, most importantly, **justify why each NoSQL type was selected for each sub-problem**.
+
+---
+
+# 📝 Assessment
+
+The course presentation specifies:
+
+- **CIE:** 50 marks
+- **SEE:** 50 marks
+- **Assignment:** Team-based mini project, assessed for 25 marks after scaling
+- **T1/T2:** conducted at the specified syllabus-coverage stages
+- **Course Project:** team-based; the syllabus suggests 2–4 students and use of any NoSQL software.
+
+> Keep `question-bank/`, `projects/`, and `activities/` updated alongside the teaching progress.
+
+---
+
+# 🧩 Suggested Repository Workflow
 
 ```text
-notes/       → lecture notes and revision material
-slides/      → classroom presentations
-examples/    → code and datasets
-activities/  → classroom activities
-projects/    → student project ideas
-resources/   → external learning resources
-question-bank/ → module-wise questions
+BEFORE CLASS
+   ↓
+Read module notes
+   ↓
+Open presentation
+   ↓
+Review e-resource
+   ↓
+CLASS
+   ↓
+Concept + discussion + demo
+   ↓
+HANDS-ON
+   ↓
+Tool / simulator / query
+   ↓
+AFTER CLASS
+   ↓
+One-shot revision + question bank
+   ↓
+PROJECT
+   ↓
+Apply + compare + justify
 ```
 
-### Commit examples
+---
+
+# 📂 Complete Repository Structure
 
 ```text
-Add Module 1 aggregate model notes
-Add MongoDB CRUD examples
-Update Module 2 CAP diagram
-Add Neo4j Cypher resources
-Add Module 5 question bank
+NoSQL-Databases-BCD515C/
+│
+├── README.md
+│
+├── slides/
+│   ├── 00-zero-session/
+│   ├── 01-module-01/
+│   ├── 02-module-02/
+│   ├── 03-module-03/
+│   ├── 04-module-04/
+│   └── 05-module-05/
+│
+├── notes/
+│   ├── module-01/
+│   ├── module-02/
+│   ├── module-03/
+│   ├── module-04/
+│   └── module-05/
+│
+├── tools/
+├── resources/
+├── examples/
+├── activities/
+├── question-bank/
+├── projects/
+└── datasets/
 ```
 
 ---
 
-## ⭐ Teaching Philosophy
+# ⭐ Teaching Mantra
 
-> **Learn the model → See the architecture → Use the tool → Solve a problem → Explain the trade-off.**
+> **Don't just learn NoSQL tools. Learn to make a database choice and defend it.**
 
-NoSQL is not about replacing SQL.  
-It is about choosing the **right data model and storage strategy for the problem**.
+A strong NoSQL learner should be able to answer:
+
+1. **Why NoSQL?**
+2. **Which data model?**
+3. **How will it scale?**
+4. **What consistency is required?**
+5. **Which database/tool fits the workload?**
+6. **What are the trade-offs?**
 
 ---
 
-## 📅 Academic Version
-
-**2026–2027 ODD | BCD515C | Semester V**
-
-This repository is intended to evolve throughout the semester. New notes, examples, presentations, question banks, datasets and e-resources can be added without changing the overall structure.
+<p align="center">
+  <b>BCD515C · NoSQL Databases · Semester V · 2026–2027 ODD</b><br>
+  <sub>Course repository designed for continuous notes, slides, tools, e-resources, activities and project updates.</sub>
+</p>
 
