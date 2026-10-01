@@ -8,6 +8,8 @@ This repository is designed to keep the syllabus, module notes, presentations, e
 ## ZERO SESSION
 [PPT Link](https://docs.google.com/presentation/d/1Gw6JMsPUvkZvm7psJs84A1y6KqxrPY-5/edit?usp=sharing&ouid=102189640680844426038&rtpof=true&sd=true)
 
+[PPT Link](https://docs.google.com/presentation/d/1u2m8QYPuW-w0JCx8rL8Gz6SC1StoBBVF/edit?usp=sharing&ouid=102189640680844426038&rtpof=true&sd=true)
+
 ## SYLLABUS
 [Syllabus Link](https://drive.google.com/file/d/1AY7Gqu1uvb7T7ISgokrS9LxiDGrjPEuU/view?usp=sharing)
 
